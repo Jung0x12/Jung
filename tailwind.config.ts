@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        beige: {
+          DEFAULT: "#E6D9CD",
+          light: "#F4EBE6",
+        },
       },
     },
   },

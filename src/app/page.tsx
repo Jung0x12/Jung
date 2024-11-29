@@ -1,101 +1,96 @@
-import Image from "next/image";
+import HomeContent from "@/components/home/content";
+import HomeFooter from "@/components/home/footer";
+import HomeHeader from "@/components/home/header";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    // <div className="flex flex-col justify-between">
+    //   <header className="sticky top-0 flex justify-between items-end px-8 py-12">
+    //     <div className="flex items-center gap-2">
+    //       <div className="w-6 h-6 rounded-full bg-beige"></div>
+    //       <div className="text-2xl font-extrabold">Jung</div>
+    //       <span className="text-xl text-gray-500"> / Software Engineer</span>
+    //     </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    //     <div className="flex items-center gap-8">
+    //       <div className="text-lg">ABOUT ME</div>
+    //       <div className="text-lg text-gray-500">RESUME</div>
+    //       <div className="text-lg text-gray-500">PROJECTS</div>
+    //       <div className="text-lg text-gray-500">CONTACT</div>
+    //     </div>
+    //   </header>
+
+    //   <main className="flex justify-center items-center min-h-screen gap-8">
+    //     <div className="w-96 h-96 rounded-full overflow-hidden shadow-lg">
+    //       <Image
+    //         src="/globe.svg"
+    //         alt="Profile"
+    //         width={384}
+    //         height={384}
+    //         className="object-cover"
+    //       />
+    //     </div>
+
+    //     <div className="basis-2/5 flex-col">
+    //       <div className="sm:text-left">
+    //         <h2 className="text-3xl font-bold">Hello</h2>
+    //         <p className="mt-2 text-gray-600">
+    //           A bit about me: I’m Jung, a software engineer passionate about
+    //           building creative solutions. Welcome to my personal website! A bit
+    //           about me: I’m Jung, a software engineer passionate about building
+    //           creative solutions. Welcome to my personal website! A bit about
+    //           me: I’m Jung, a software engineer passionate about building
+    //           creative solutions. Welcome to my personal website!
+    //         </p>
+    //       </div>
+
+    //       <div className="mt-8 flex gap-4">
+    //         <a
+    //           href="#resume"
+    //           className="flex items-center justify-center w-24 h-24 rounded-full bg-yellow-500 text-white font-semibold shadow-md hover:bg-yellow-400 transition"
+    //         >
+    //           Resume
+    //         </a>
+    //         <a
+    //           href="#projects"
+    //           className="flex items-center justify-center w-24 h-24 rounded-full bg-red-500 text-white font-semibold shadow-md hover:bg-red-400 transition"
+    //         >
+    //           Projects
+    //         </a>
+    //         <a
+    //           href="#contact"
+    //           className="flex items-center justify-center w-24 h-24 rounded-full bg-blue-500 text-white font-semibold shadow-md hover:bg-blue-400 transition"
+    //         >
+    //           Contact
+    //         </a>
+    //       </div>
+    //     </div>
+    //   </main>
+
+    //   <footer className="h-32 bg-gray-200"></footer>
+    // </div>
+
+    // <div className="flex flex-col justify-between h-screen">
+    //   <div className="flex justify-between bg-blue-500 text-white p-4">
+    //     <div className="">
+    //       1
+    //     </div>
+    //     <div>
+    //       2
+    //     </div>
+    //   </div>
+    //   <div className="bg-green-500 text-white p-4">
+    //     This is the centered element
+    //   </div>
+    //   <div className="bg-orange-500 text-white p-4">
+    //     This is the centered element
+    //   </div>
+    // </div>
+
+    <div>
+      <HomeHeader />
+      <HomeContent />
+      <HomeFooter />
     </div>
   );
 }
