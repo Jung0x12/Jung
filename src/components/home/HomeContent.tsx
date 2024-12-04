@@ -1,6 +1,12 @@
+import Link from "next/link";
+
+import { menuItems } from "@/app/constants";
+
 const HomeContent = () => {
+  const homeMenuItems = menuItems.filter((item) => item.name !== "Home");
+
   return (
-    <div className="flex h-screen bg-beige">
+    <div className="flex h-scree">
       <div className="w-2/5">
         <div className="flex flex-col h-full">
           <div className="flex-grow"></div>
@@ -21,10 +27,15 @@ const HomeContent = () => {
 
       <div className="h-screen w-3/5 flex items-center">
         <div className="flex flex-col justify-between h-[75vh] pl-12 text-9xl 2xl:text-[200px]">
-          <span className="hover-slide-left">About</span>
-          <span className="hover-slide-left">Profolio</span>
-          <span className="hover-slide-left">Resume</span>
-          <span className="hover-slide-left">Contact</span>
+          {homeMenuItems.map((item) => (
+            <Link
+              key={item.path}
+              href={item.path}
+              className={"hover-slide-left"}
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
       </div>
     </div>

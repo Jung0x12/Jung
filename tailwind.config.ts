@@ -15,6 +15,12 @@ export default {
           DEFAULT: "#E6D9CD",
           light: "#F4EBE6",
         },
+        brown: {
+          DEFAULT: "#795548",
+          dark: "#493628",
+          400: "#8D6E63",
+          700: "#5D4037",
+        },
       },
     },
   },
