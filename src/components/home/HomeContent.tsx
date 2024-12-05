@@ -17,7 +17,7 @@ const HomeContent = () => {
                 Software Developer / Blockchain & Mobile
               </div>
               <div className="2xl:text-xl">
-                Working full-time as a Blockchain Engineer at
+                Working full-time as a Blockchain developer at
                 <br /> Isle Finance
               </div>
             </div>
