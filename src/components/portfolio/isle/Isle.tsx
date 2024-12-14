@@ -4,10 +4,9 @@ import LinkWithIcon from "@/components/common/LinkWithIcon";
 
 const Isle = () => {
   return (
-    <div className="flex h-[calc(100vh-6rem)] w-full">
-      <div className="flex flex-col w-[45vw] items-end pe-8 2xl:pe-16">
-        <div className="h-[20vh]"></div>
-        <div className="flex flex-col w-[35vw] 2xl:w-[30vw]">
+    <div className="flex w-full">
+      <div className="flex flex-col w-[42vw] items-end pe-8 2xl:pe-16">
+        <div className="flex flex-col w-[35vw] 2xl:w-[30vw] pt-20 2xl:pt-32">
           <LinkWithIcon
             href="https://testnet.app.isle.finance/pools"
             title="Isle Finance"
@@ -20,8 +19,7 @@ const Isle = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col flex-grow">
-        <div className="h-[16vh]"></div>
+      <div className="flex flex-grow py-8">
         <div className="w-[50vw]">
           <Image
             src="/isle.png"
