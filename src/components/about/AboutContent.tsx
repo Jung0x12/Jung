@@ -88,16 +88,8 @@ const AboutContent = () => {
             </div>
 
             {/* CV & Contact */}
-            <div className="flex gap-4">
-              <div className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300">
-                Let's Contact
-              </div>
-              <Link
-                href="/contact"
-                className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300"
-              >
-                CV
-              </Link>
+            <div className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300">
+              Let's Contact
             </div>
           </div>
         </div>

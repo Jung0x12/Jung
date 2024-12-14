@@ -23,3 +23,7 @@ body {
 .hover-slide-left {
   @apply transform transition-transform duration-500 hover:-translate-x-8;
 }
+
+.link-hover {
+  @apply transform transition-transform duration-500 hover:underline;
+}
