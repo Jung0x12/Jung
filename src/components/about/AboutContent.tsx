@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutContent = () => {
   return (
@@ -8,14 +8,16 @@ const AboutContent = () => {
         <div className="flex flex-col h-full items-end">
           <div className="w-3/4 2xl:w-3/5">
             {/* Hello */}
-            <div className="text-9xl font-bold">Hello</div>
-            <div className="text-5xl leading-snug mt-10">
-              I'm Jung
-              <br />A software developer
+            <div className="font-bebasNeue">
+              <div className="text-9xl font-bold">Hello</div>
+              <div className="text-5xl leading-snug mt-10">
+                I'm Jung
+                <br />A software developer
+              </div>
             </div>
 
             {/* Intro */}
-            <div className="text-lg leading-normal mt-6 space-y-6">
+            <div className="text-lg leading-normal mt-6 space-y-6 font-varela">
               <div>
                 I have nearly 6 years of experience as a software developer, in
                 the early stages of my career I focus on Mobile development.
@@ -39,8 +41,8 @@ const AboutContent = () => {
 
             {/* Expierence */}
             <div className="mt-12">
-              <div className="text-3xl">Expierence</div>
-              <div className="text-lg mt-4 ms-2 space-y-1">
+              <div className="text-5xl font-bebasNeue">Expierence</div>
+              <div className="text-lg mt-4 ms-2 space-y-1 font-varela">
                 <div>- 1 year of blockchain developer</div>
                 <div>- 5 years of mobile developer</div>
                 <div>- Bachelor of Computer Science</div>
@@ -49,11 +51,11 @@ const AboutContent = () => {
 
             {/* Skills */}
             <div className="mt-12">
-              <div className="text-3xl">Skills</div>
-              <div className="mt-3 space-y-4">
+              <div className="text-5xl font-bebasNeue">Skills</div>
+              <div className="mt-3 space-y-6">
                 <div>
-                  <div className="text-2xl">Blockchain</div>
-                  <div className="text-lg leading-relaxed mt-1 ms-1">
+                  <div className="text-3xl font-bebasNeue">Blockchain</div>
+                  <div className="text-lg leading-relaxed mt-1 ms-1 font-varela">
                     Solidity / Foundry
                     <br />
                     Openzeppelin / Chainlink VRF
@@ -64,8 +66,8 @@ const AboutContent = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl">Mobile</div>
-                  <div className="text-lg leading-relaxed mt-1 ms-1">
+                  <div className="text-3xl font-bebasNeue">Mobile</div>
+                  <div className="text-lg leading-relaxed mt-1 ms-1 font-varela">
                     Kotlin / Java
                     <br />
                     MVVM / MVI / Clean Architecture
@@ -74,13 +76,12 @@ const AboutContent = () => {
                     <br />
                     Mockk / Junit5 / Robolectric / Kaspresso / Github Action(CI)
                     <br />
-                    Jetpack Libraries / Firebase Tools / KMM(Kotlin
-                    Multiplatform Mobile)
+                    Jetpack / KMM(Kotlin Multiplatform Mobile) / Firebase Tools
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl">Others</div>
-                  <div className="text-lg leading-relaxed mt-1 ms-1">
+                  <div className="text-3xl font-bebasNeue">Others</div>
+                  <div className="text-lg leading-relaxed mt-1 ms-1 font-varela">
                     Next.js / React / TypeScript / Tailwind CSS
                   </div>
                 </div>
@@ -88,9 +89,15 @@ const AboutContent = () => {
             </div>
 
             {/* CV & Contact */}
-            <div className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300">
+            <Link
+              href="/contact"
+              className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300 font-bebasNeue"
+            >
               Let's Contact
-            </div>
+            </Link>
+            {/* <div className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300 font-bebasNeue">
+              Let's Contact
+            </div> */}
           </div>
         </div>
       </div>

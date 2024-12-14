@@ -5,14 +5,14 @@ import LinkWithIcon from "@/components/common/LinkWithIcon";
 const SportyBet = () => {
   return (
     <div className="flex h-[calc(100vh-6rem)] w-full">
-      <div className="flex flex-col w-[45vw] items-end pe-4 2xl:pe-6">
+      <div className="flex flex-col w-[45vw] items-end pe-8 2xl:pe-16">
         <div className="h-[20vh]"></div>
         <div className="flex flex-col w-[35vw] 2xl:w-[30vw]">
           <LinkWithIcon
             href="https://play.google.com/store/apps/details?id=com.sportybet.android.gp&hl=en_US"
             title="SportyBet"
           />
-          <div className="text-lg mt-6 2xl:text-xl">
+          <div className="text-xl mt-6 2xl:text-2xl font-varela">
             SportyBet App is the ultimate destination for a thrilling sports
             betting experience. It offers a wide range of sports betting
             options, with a special focus on football. Users can enjoy diverse

@@ -11,12 +11,14 @@ const HomeContent = () => {
         <div className="flex flex-col h-full">
           <div className="flex-grow"></div>
           <div className="h-2/5 flex items-start justify-end">
-            <div className="w-[400px] 2xl:w-[600px] space-y-6">
-              <div className="text-xl 2xl:text-3xl font-bold">Jung</div>
-              <div className="2xl:text-xl">
+            <div className="w-[400px] 2xl:w-[600px]">
+              <div className="text-4xl 2xl:text-5xl font-bebasNeue">
+                Jung Tu
+              </div>
+              <div className="text-lg 2xl:text-2xl mt-4 2xl:mt-6 font-varela">
                 Software Developer / Blockchain & Mobile
               </div>
-              <div className="2xl:text-xl">
+              <div className="text-lg 2xl:text-2xl mt-1 2xl:mt-2 font-varela">
                 Working full-time as a Blockchain developer at
                 <br /> Isle Finance
               </div>
@@ -31,7 +33,7 @@ const HomeContent = () => {
             <Link
               key={item.path}
               href={item.path}
-              className={"hover-slide-left"}
+              className={"hover-slide-left font-bebasNeue"}
             >
               {item.name}
             </Link>

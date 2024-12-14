@@ -21,12 +21,12 @@ const ContactContent = () => {
       <div className="w-[55%]">
         <div className="flex flex-col h-full items-end justify-center">
           <div className="w-3/5 2xl:w-3/5">
-            <div className="text-9xl font-bold">Contact</div>
-            <div className="text-xl leading-snug mt-10 ms-4">
+            <div className="text-9xl font-bebasNeue">Contact</div>
+            <div className="text-xl leading-snug mt-10 ms-4 font-varela">
               Get in touch with me via social media
               <br /> or send me an email.
             </div>
-            <div className="text-lg mt-5 ms-4">
+            <div className="text-lg mt-5 ms-4 font-varela">
               <div>
                 Email: jwork1994212@gmail.com
                 <br />

@@ -22,6 +22,10 @@ export default {
           700: "#5D4037",
         },
       },
+      fontFamily: {
+        bebasNeue: ["var(--bebas-neue)"],
+        varela: ["var(--varela)"],
+      },
     },
   },
   plugins: [],

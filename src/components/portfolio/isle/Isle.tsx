@@ -5,14 +5,14 @@ import LinkWithIcon from "@/components/common/LinkWithIcon";
 const Isle = () => {
   return (
     <div className="flex h-[calc(100vh-6rem)] w-full">
-      <div className="flex flex-col w-[45vw] items-end pe-4 2xl:pe-6">
+      <div className="flex flex-col w-[45vw] items-end pe-8 2xl:pe-16">
         <div className="h-[20vh]"></div>
         <div className="flex flex-col w-[35vw] 2xl:w-[30vw]">
           <LinkWithIcon
             href="https://testnet.app.isle.finance/pools"
             title="Isle Finance"
           />
-          <div className="text-lg mt-6 2xl:text-xl">
+          <div className="text-xl mt-6 2xl:text-2xl font-varela">
             Isle Finance is the decentralized protocol for globally accessible
             supply chain finance, with a mission to bring the world's supply
             chain activity on-chain while expanding capital access and

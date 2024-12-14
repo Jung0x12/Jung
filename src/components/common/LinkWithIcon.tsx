@@ -11,7 +11,7 @@ const LinkWithIcon: React.FC<LinkWithIconProps> = ({ href, title }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-7xl flex items-center group"
+      className="text-7xl 2xl:text-8xl flex items-center group font-bebasNeue"
     >
       {title}
       <img

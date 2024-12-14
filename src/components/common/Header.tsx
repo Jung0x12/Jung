@@ -9,7 +9,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 flex w-full h-24 bg-beige">
+    <header className="sticky top-0 z-50 flex w-full h-24 bg-beige font-bebasNeue text-xl 2xl:text-2xl">
       <div className="flex-grow-[4] 2xl:flex-grow-[8] flex items-center">
         <div className="w-full h-px bg-brown ml-10"></div>
       </div>
