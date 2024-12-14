@@ -25,7 +25,7 @@ const Lativ = () => {
         <div className="flex gap-1">
           <div className="w-[17vw]">
             <Image
-              src="/Lativ1.webp"
+              src="/lativ1.webp"
               alt="Lativ Shopping APP"
               layout="responsive"
               width={0}
@@ -35,7 +35,7 @@ const Lativ = () => {
           </div>
           <div className="w-[17vw]">
             <Image
-              src="/Lativ2.webp"
+              src="/lativ2.webp"
               alt="Lativ Shopping APP"
               layout="responsive"
               width={0}
@@ -45,7 +45,7 @@ const Lativ = () => {
           </div>
           <div className="w-[17vw]">
             <Image
-              src="/Lativ3.webp"
+              src="/lativ3.webp"
               alt="Lativ Shopping APP"
               layout="responsive"
               width={0}
