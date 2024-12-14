@@ -27,7 +27,7 @@ const HomeContent = () => {
         </div>
       </div>
 
-      <div className="h-screen w-3/5 flex items-center">
+      <div className="h-screen flex items-center ps-8">
         <div className="flex flex-col justify-between h-[75vh] pl-12 text-9xl 2xl:text-[200px]">
           {homeMenuItems.map((item) => (
             <Link
