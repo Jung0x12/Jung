@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 interface LinkWithIconProps {
   href: string;
   title: string;
@@ -14,7 +16,7 @@ const LinkWithIcon: React.FC<LinkWithIconProps> = ({ href, title }) => {
       className="text-7xl 2xl:text-8xl flex items-center group font-bebasNeue"
     >
       {title}
-      <img
+      <Image
         src="/link.png"
         alt={`${title} icon`}
         className="ml-4 opacity-0 transform translate-x-4 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0"

@@ -11,7 +11,7 @@ const AboutContent = () => {
             <div className="font-bebasNeue">
               <div className="text-9xl font-bold">Hello</div>
               <div className="text-5xl leading-snug mt-10">
-                I'm Jung
+                {"I'm Jung"}
                 <br />A software developer
               </div>
             </div>
@@ -93,11 +93,8 @@ const AboutContent = () => {
               href="/contact"
               className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300 font-bebasNeue"
             >
-              Let's Contact
+              {"Let's Contact"}
             </Link>
-            {/* <div className="inline-block px-16 py-4 mt-16 bg-black text-white text-2xl rounded-[36px] hover:px-20 duration-300 font-bebasNeue">
-              Let's Contact
-            </div> */}
           </div>
         </div>
       </div>
