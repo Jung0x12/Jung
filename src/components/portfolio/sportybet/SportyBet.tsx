@@ -11,14 +11,11 @@ const SportyBet = () => {
             href="https://play.google.com/store/apps/details?id=com.sportybet.android.gp&hl=en_US"
             title="SportyBet"
           />
-          <div className="text-xl mt-6 2xl:text-2xl font-varela">
-            SportyBet App is the ultimate destination for a thrilling sports
-            betting experience. It offers a wide range of sports betting
-            options, with a special focus on football. Users can enjoy diverse
-            markets, competitive odds, attractive bonuses, and an in-house
-            casino for added excitement. The platform also includes responsible
-            gambling features, seamless bet placement, and live streaming of
-            popular matches.
+          <div className="text-xl mt-6 2xl:text-2xl font-varela text-brown-dark">
+            {"SportyBet App is the ultimate destination for a thrilling sports betting experience. " +
+              "It offers a wide range of sports betting options, with a special focus on football. " +
+              "Users can enjoy diverse markets, competitive odds, attractive bonuses, and an in-house casino for added excitement. " +
+              "The platform also includes responsible gambling features, seamless bet placement, and live streaming of popular matches."}
           </div>
         </div>
       </div>

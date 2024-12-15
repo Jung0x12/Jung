@@ -11,13 +11,12 @@ const Lativ = () => {
             href="https://play.google.com/store/apps/details?id=tw.com.lativ.shopping&hl=zh_TW&pli=1"
             title="Lativ"
           />
-          <div className="text-xl mt-6 2xl:text-2xl font-varela">
-            Lativ is an e-commerce platform dedicated to offering nice quality
-            clothing and exceptional customer service. The platform strives to
-            combine style, comfort, and functionality, catering to a wide range
-            of fashion preferences while maintaining a commitment to quality and
-            customer satisfaction, also ensures that customers enjoy a seamless
-            shopping experience.
+          <div className="text-xl mt-6 2xl:text-2xl font-varela text-brown-dark">
+            {"Lativ is an e-commerce platform dedicated to offering nice quality clothing " +
+              "and exceptional customer service. The platform strives to combine style, comfort, " +
+              "and functionality, catering to a wide range of fashion preferences while maintaining " +
+              "a commitment to quality and customer satisfaction, also ensures that customers enjoy " +
+              "a seamless shopping experience."}
           </div>
         </div>
       </div>
