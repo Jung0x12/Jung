@@ -107,6 +107,7 @@ const AboutContent = () => {
             alt="Profile"
             layout="fill"
             objectFit="cover"
+            priority={true}
           />
         </div>
       </div>

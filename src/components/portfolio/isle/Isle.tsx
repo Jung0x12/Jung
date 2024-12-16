@@ -23,6 +23,7 @@ const Isle = () => {
             layout="responsive"
             width={3024}
             height={1660}
+            priority={true}
             className="rounded-lg shadow-lg"
           />
         </div>
