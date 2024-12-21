@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-const BlogContent = () => {
+import { generateBlurDataURLs } from "@/helpers";
+
+const BlogContent = async () => {
   const blogs = [
     {
       title:
@@ -19,17 +21,23 @@ const BlogContent = () => {
     },
   ];
 
+  const blurUrls = await generateBlurDataURLs(
+    blogs.map((blog) => `public/${blog.img}`),
+  );
+
   const BlogLink = ({
     title,
     subtitle,
     url,
     img,
+    blurDataURL,
     isAboveFold = false,
   }: {
     title: string;
     subtitle: string;
     url: string;
     img: string;
+    blurDataURL: string;
     isAboveFold?: boolean;
   }) => (
     <a
@@ -46,10 +54,12 @@ const BlogContent = () => {
         <Image
           src={img}
           alt={title}
-          width={0}
-          height={0}
-          style={{ width: "100%", height: "auto" }}
+          width={2400}
+          height={1200}
+          placeholder="blur"
+          blurDataURL={blurDataURL}
           priority={isAboveFold}
+          style={{ width: "100%", height: "auto" }}
           className="rounded-lg shadow-lg"
         />
       </div>
@@ -67,6 +77,7 @@ const BlogContent = () => {
             subtitle={blog.subtitle}
             url={blog.url}
             img={blog.img}
+            blurDataURL={blurUrls[index].blurDataURL}
             isAboveFold={index === 0}
           />
         ))}

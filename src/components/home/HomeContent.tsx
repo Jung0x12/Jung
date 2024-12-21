@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { menuItems } from "@/app/constants";
+import { menuItems } from "@/constants";
 
 const HomeContent = () => {
   const homeMenuItems = menuItems.filter((item) => item.name !== "Home");

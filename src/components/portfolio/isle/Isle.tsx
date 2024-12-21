@@ -1,8 +1,11 @@
 import Image from "next/image";
 
 import LinkWithIcon from "@/components/common/LinkWithIcon";
+import { generateBlurDataURLs } from "@/helpers";
 
-const Isle = () => {
+const Isle = async () => {
+  const blurUrls = await generateBlurDataURLs(["public/isle.webp"]);
+
   return (
     <div className="flex w-full">
       <div className="flex flex-col w-[42vw] items-end pe-8 2xl:pe-16">
@@ -20,10 +23,12 @@ const Isle = () => {
           <Image
             src="/isle.webp"
             alt="Isle Finance"
-            width={0}
-            height={0}
+            width={2700}
+            height={1200}
             priority={true}
             style={{ width: "100%", height: "auto" }}
+            placeholder="blur"
+            blurDataURL={blurUrls[0].blurDataURL}
             className="rounded-lg shadow-lg"
           />
         </div>

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import getPlaiceholder from "lqip-modern"
+import { generateBlurDataURLs } from "@/helpers";
 
 const AboutContent = async () => {
-  const { metadata } = await getPlaiceholder("public/profile.webp");
+  const blurUrls = await generateBlurDataURLs(["public/profile.webp"]);
 
   return (
     <div className="flex mt-4 mb-24">
@@ -113,7 +113,7 @@ const AboutContent = async () => {
             style={{ objectFit: "cover" }}
             priority={true}
             placeholder="blur"
-            blurDataURL={metadata.dataURIBase64}
+            blurDataURL={blurUrls[0].blurDataURL}
           />
         </div>
       </div>

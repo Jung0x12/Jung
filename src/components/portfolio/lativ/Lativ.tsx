@@ -1,8 +1,15 @@
 import Image from "next/image";
 
 import LinkWithIcon from "@/components/common/LinkWithIcon";
+import { generateBlurDataURLs } from "@/helpers";
 
-const Lativ = () => {
+const Lativ = async () => {
+  const imgs = ["lativ1.webp", "lativ2.webp", "lativ3.webp"];
+
+  const blurUrls = await generateBlurDataURLs(
+    imgs.map((img) => `public/${img}`),
+  );
+
   return (
     <div className="flex w-full">
       <div className="flex flex-col w-[42vw] items-end pe-8 2xl:pe-16">
@@ -22,39 +29,21 @@ const Lativ = () => {
       </div>
       <div className="flex flex-col flex-grow py-8">
         <div className="flex gap-1">
-          <div className="w-[17vw]">
-            <Image
-              src="/lativ1.webp"
-              alt="Lativ Shopping APP"
-              width={0}
-              height={0}
-              priority={true}
-              style={{ width: "100%", height: "auto" }}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="w-[17vw]">
-            <Image
-              src="/lativ2.webp"
-              alt="Lativ Shopping APP"
-              width={0}
-              height={0}
-              priority={true}
-              style={{ width: "100%", height: "auto" }}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="w-[17vw]">
-            <Image
-              src="/lativ3.webp"
-              alt="Lativ Shopping APP"
-              width={0}
-              height={0}
-              priority={true}
-              style={{ width: "100%", height: "auto" }}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
+          {imgs.map((img, index) => (
+            <div key={img} className="w-[17vw]">
+              <Image
+                src={img}
+                alt={`Lativ Shopping APP ${index}`}
+                width={1080}
+                height={1290}
+                priority={true}
+                style={{ width: "100%", height: "auto" }}
+                placeholder="blur"
+                blurDataURL={blurUrls[index].blurDataURL}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
