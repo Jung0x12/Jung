@@ -18,12 +18,12 @@ const Isle = () => {
       <div className="flex flex-grow py-8">
         <div className="w-[50vw]">
           <Image
-            src="/isle.png"
+            src="/isle.webp"
             alt="Isle Finance"
-            layout="responsive"
-            width={3024}
-            height={1660}
+            width={0}
+            height={0}
             priority={true}
+            style={{ width: "100%", height: "auto" }}
             className="rounded-lg shadow-lg"
           />
         </div>

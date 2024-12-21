@@ -46,9 +46,9 @@ const BlogContent = () => {
         <Image
           src={img}
           alt={title}
-          layout="responsive"
           width={0}
           height={0}
+          style={{ width: "100%", height: "auto" }}
           priority={isAboveFold}
           className="rounded-lg shadow-lg"
         />

@@ -26,9 +26,10 @@ const Lativ = () => {
             <Image
               src="/lativ1.webp"
               alt="Lativ Shopping APP"
-              layout="responsive"
               width={0}
               height={0}
+              priority={true}
+              style={{ width: "100%", height: "auto" }}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -36,9 +37,10 @@ const Lativ = () => {
             <Image
               src="/lativ2.webp"
               alt="Lativ Shopping APP"
-              layout="responsive"
               width={0}
               height={0}
+              priority={true}
+              style={{ width: "100%", height: "auto" }}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -46,9 +48,10 @@ const Lativ = () => {
             <Image
               src="/lativ3.webp"
               alt="Lativ Shopping APP"
-              layout="responsive"
               width={0}
               height={0}
+              priority={true}
+              style={{ width: "100%", height: "auto" }}
               className="rounded-lg shadow-lg"
             />
           </div>

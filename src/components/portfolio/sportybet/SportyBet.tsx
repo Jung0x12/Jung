@@ -25,9 +25,10 @@ const SportyBet = () => {
             <Image
               src="/SB1.webp"
               alt="SportyBet APP"
-              layout="responsive"
               width={0}
               height={0}
+              priority={true}
+              style={{ width: "100%", height: "auto" }}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -35,9 +36,10 @@ const SportyBet = () => {
             <Image
               src="/SB2.webp"
               alt="SportyBet APP"
-              layout="responsive"
               width={0}
               height={0}
+              priority={true}
+              style={{ width: "100%", height: "auto" }}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -45,9 +47,10 @@ const SportyBet = () => {
             <Image
               src="/SB3.webp"
               alt="SportyBet APP"
-              layout="responsive"
               width={0}
               height={0}
+              priority={true}
+              style={{ width: "100%", height: "auto" }}
               className="rounded-lg shadow-lg"
             />
           </div>
